@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"import PyPDF2; reader = PyPDF2.PdfReader\\(open\\('./paper.pdf', 'rb'\\)\\); print\\(f'Total pages: {len\\(reader.pages\\)}'\\); [print\\(f'\\\\n=== Page {i+1} ===\\\\n{reader.pages[i].extract_text\\(\\)}'\\) for i in range\\(min\\(5, len\\(reader.pages\\)\\)\\)]\")",
+      "Bash(python -c \"import PyPDF2; reader = PyPDF2.PdfReader\\(open\\('./paper.pdf', 'rb'\\)\\); print\\(f'Total pages: {len\\(reader.pages\\)}'\\); [print\\(f'\\\\n=== Page {i+1} ===\\\\n{reader.pages[i].extract_text\\(\\)}'\\) for i in range\\(min\\(5, len\\(reader.pages\\)\\)\\)]\")",
+      "Bash(pdftotext ./paper.pdf -)",
+      "Bash(conda *)",
+      "Bash(pip install *)",
+      "Bash(C:\\\\Users\\\\19642\\\\miniconda3\\\\envs\\\\kronos\\\\Scripts\\\\pip.exe install *)",
+      "Bash(python download_example_data.py)",
+      "Bash(C:/Users/19642/miniconda3/envs/kronos/python.exe download_example_data.py)",
+      "Bash(C:/Users/19642/miniconda3/envs/kronos/python.exe generate_random_data.py)",
+      "Bash(C:/Users/19642/miniconda3/envs/kronos/python.exe prediction_example.py)",
+      "Bash(C:/Users/19642/miniconda3/envs/kronos/python.exe *)",
+      "Bash(python generate_random_data.py)",
+      "Bash(ping *)",
+      "Bash(curl -I -v https://push2his.eastmoney.com/api/qt/stock/kline/get)",
+      "Bash(curl -I -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/130.0.0.0 Safari/537.36\" https://push2his.eastmoney.com/api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6)",
+      "Bash(end=20500000 2>&1)",
+      "Bash(python prediction_example.py)",
+      "Bash(/c/Users/19642/miniconda3/envs/kronos/python.exe *)",
+      "WebFetch(domain:github.com)",
+      "Bash(xargs grep *)",
+      "Bash(python prediction_qlib_daily.py)",
+      "Bash(C:\\\\Users\\\\19642\\\\miniconda3\\\\envs\\\\kronos\\\\python.exe *)",
+      "Bash(/c/Users/19642/miniconda3/envs/kronos/python.exe prediction_qlib_daily.py)",
+      "Bash(python qlib_data_preprocess.py)",
+      "Bash(torchrun --standalone --nproc_per_node=1 train_tokenizer.py)",
+      "Bash(python -m torch.distributed.run --standalone --nproc_per_node=1 train_tokenizer.py)",
+      "Bash(\"C:/Users/19642/miniconda3/envs/kronos/python.exe\" -m torch.distributed.run --standalone --nproc_per_node=1 train_tokenizer.py)",
+      "Bash(set USE_LIBUV=0)",
+      "Bash(USE_LIBUV=0 \"C:/Users/19642/miniconda3/envs/kronos/python.exe\" -m torch.distributed.run --standalone --nproc_per_node=1 train_tokenizer.py)",
+      "Bash(claude plugin *)"
+    ]
+  }
+}
