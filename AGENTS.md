@@ -11,6 +11,7 @@ High-signal facts supplementing `CLAUDE.md`. Read both.
 | `qlib-master/` | Vendored qlib source (upstream is `pip install pyqlib`). |
 | `justicePlutus/` | Separate A-share analysis + LLM pipeline project, not part of Kronos core. |
 | `model/__init__.py` | Exports `Kronos`, `KronosTokenizer`, `KronosPredictor`. Also has `get_model_class()`. |
+| `kronos_data_provider/` | **New** — auto data acquisition layer. `KronosDataManager` (unified entry), mootdx TCP backend, Tencent realtime, HTTP fallback, local CSV cache. |
 
 ## Training commands — not just torchrun
 

@@ -20,6 +20,18 @@ import comet_ml
 sys.path.append("../")
 from config import Config
 from dataset import QlibDataset
+
+# ── 自动检查预处理数据 ──
+_config_check = Config()
+_train_pkl = f"{_config_check.dataset_path}/train_data.pkl"
+if not os.path.exists(_train_pkl):
+    print("[自动预处理] 未检测到训练数据，启动自动数据获取...")
+    from data_preprocessor import DataPreprocessor
+    pre = DataPreprocessor()
+    pre.fetch_data()
+    pre.prepare_dataset()
+    print("[自动预处理] 完成")
+del _config_check, _train_pkl
 from model.kronos import KronosTokenizer
 # Import shared utilities
 from utils.training_utils import (

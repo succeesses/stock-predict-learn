@@ -54,6 +54,7 @@ Desktop.ini
 *.pt
 *.ckpt
 *.bin
+*.safetensors
 
 # Logs
 *.log
@@ -74,3 +75,12 @@ venv.bak/
 temp/
 tmp/
 .python-version
+
+# Data cache (auto-generated)
+data_cache/
+test_cache_phase*/
+
+# Generated prediction outputs
+examples/data/
+*.png
+*.csv

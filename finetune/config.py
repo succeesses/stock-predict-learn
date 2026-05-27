@@ -9,11 +9,16 @@ class Config:
         # =================================================================
         # Data & Feature Parameters
         # =================================================================
-        # TODO: Update this path to your Qlib data directory.
-        self.qlib_data_path = "C:\\Users\\19642\\.qlib\\qlib_data\\cn_data"
+        # Qlib 数据路径（已弃用，保留向后兼容）
+        self.qlib_data_path = None  # @deprecated use data_cache_dir
         self.instrument = 'csi300'
 
-        # Overall time range for data loading from Qlib.
+        # ── 自动数据源配置（替代 Qlib）──
+        self.data_cache_dir = "./data_cache"
+        self.stock_list_source = "csi300"
+        self.custom_stock_list = []
+
+        # Overall time range for data loading.
         self.dataset_begin_time = "2011-01-01"
         self.dataset_end_time = '2026-04-17'
 
